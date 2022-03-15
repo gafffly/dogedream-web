@@ -1,0 +1,59 @@
+body {
+  background: linear-gradient(113.49deg, #d53a9d -30.3%, #181e41 58.12%);
+  /* background: linear-gradient(to right, #743ad5 0%, #d53a9d 100%); */
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+@import "antd/es/collapse/style/index.css";
+@import "antd/es/timeline/style/index.css";
+@import "antd/es/list/style/index.css";
+@import "antd/es/spin/style/index.css";
+@import "antd/es/menu/style/index.css";
+@import "antd/es/dropdown/style/index.css";
+@import "antd/lib/back-top/style/index.css";
+
+.border-colorful {
+  @apply border-3;
+  border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+  border-image-slice: 1;
+}
+
+.ant-collapse,
+.ant-collapse > .ant-collapse-item > .ant-collapse-header,
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
+  @apply text-gray-300 text-xl;
+}
+
+.ant-collapse-content {
+  @apply text-xl text-gray-200 leading-normal pl-8;
+}
+
+.ant-collapse-content-box {
+  @apply !pt-0;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
+  @apply px-0 py-0;
+}
+
+.ant-list {
+  @apply w-full;
+}
+
+.ant-timeline,
+.ant-timeline-item {
+  @apply text-xl text-gray-200 leading-normal pb-12;
+}
+
+.ant-timeline-item-head-blue {
+  color: #743ad5;
+  border-color: #d53a9d;
+}
+
+.ant-timeline-item-tail {
+  color: #d53a9d;
+  border-color: #d53a9d;
+  /* border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%); */
+  /* border-image-slice: 1; */
+}

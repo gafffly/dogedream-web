@@ -1,0 +1,16 @@
+.button {
+  /* Frame 1 */
+  /* pp2 purple */
+  background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+}
+
+.button:hover {
+  /* Frame 1 */
+  /* pp2 purple */
+  background: linear-gradient(-214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+}
