@@ -123,7 +123,7 @@ const Home: NextPage = () => {
               {lang.buy.title}
             </div>
 
-            <ColorButton className="!bg-opacity-50 !bg-white !bg-white text-2xl shadow-lg :hover(!bg-auto border-purple) border-lightblue-600 border">
+            <ColorButton className="!bg-opacity-50 !bg-white !bg-white text-2xl shadow-lg :hover(!bg-auto border-purple) border-sky-600 border">
               {lang.buy.desc}
             </ColorButton>
           </div>
