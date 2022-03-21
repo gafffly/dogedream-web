@@ -120,15 +120,16 @@ export default {
     desc: "成员全部来自社区",
     content: [
       {
-        name: "山",
-        title: "网页设计、网站开发",
-        desc: "",
-        avatar: "",
-        telegram: "",
-        discord: "",
-        instagram: "",
-        twitter: "",
-        github: "",
+        title: "",
+        desc: "因为我们喜欢狗狗币的文化，期待狗狗币的未来，或者崇拜马斯克等，我们为了一个DogeDream聚在了一起，为了更好地推广狗狗币，并为狗狗币支持者提供交流和建设的平台，我们创造了DogeDreamDao。",
+      },
+      {
+        title: "",
+        desc: "项目团队成员有来自一线交易所的技术工程师、多年从事互联网行业的工程师和媒体人、多个区块链项目发起人，以及若干知名艺术家等。",
+      },
+      {
+        title: "",
+        desc: "作为一个DAO组织，所有成员都相互平等。我们也在招募更多人来建设DogeDreamDao。快点加入我们！",
       },
     ],
   },

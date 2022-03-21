@@ -120,15 +120,24 @@ export default {
     desc: "Our talents team from communities",
     content: [
       {
-        name: "Mountain",
-        title: "Web UI & Developer",
-        desc: "",
-        avatar: "",
-        telegram: "",
-        discord: "",
-        instagram: "",
-        twitter: "",
-        github: "",
+        title: "",
+        desc: "As the hard-core followers of DogeCoin’s culture, we look forward to the future of DogeCoin and value Musk’s essential role in it. For this, we get together for the DogeDream.",
+      },
+      {
+        title: "",
+        desc: "In order to better promote DogeCoin and provide a platform for communication and construction for supporters, we created DogeDreamDao.",
+      },
+      {
+        title: "",
+        desc: "Members of the team include engineers from top-tier exchanges, engineers and media  practitioners who have been engaged in the Internet industry for years, founders of many blockchain projects, and several well-known artists.",
+      },
+      {
+        title: "",
+        desc: "As a DAO, all members are equal and we are also recruiting more people to build DogeDreamDao.",
+      },
+      {
+        title: "",
+        desc: "Come and join us!",
       },
     ],
   },

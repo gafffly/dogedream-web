@@ -22,7 +22,7 @@ export const NavMenu = () => {
   const lang = i18n[activeLocale as Language]
 
   return (
-    <nav className="text-white text-2xl">
+    <nav className="text-white text-xl">
       <div className="flex flex-row items-center space-x-6">
         {lang.nav.map((item, index) => (
           <ScrollTo key={index} selector={`#${item.anchor}`}>

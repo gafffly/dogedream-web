@@ -21,7 +21,7 @@ const Home: NextPage = () => {
   const lang = i18n[activeLocale as Language]
 
   return (
-    <div>
+    <>
       <Head>
         <title>Dogedream DAO & Dogodream NFT</title>
 
@@ -36,7 +36,9 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <Header></Header>
+
       <main>
         <Hero></Hero>
 
@@ -48,7 +50,7 @@ const Home: NextPage = () => {
           {lang.dao.content.map((item, index) => (
             <p
               key={index}
-              className="text-gray-200 leading-relaxed text-left text-2xl font-medium mt-6 mb-6"
+              className="text-gray-200 leading-relaxed text-left text-xl font-medium mt-6 mb-6"
             >
               {item.desc}
             </p>
@@ -73,7 +75,7 @@ const Home: NextPage = () => {
                     <List.Item.Meta
                       title={item.title}
                       description={
-                        <p className="text-gray-200 text-left text-2xl font-medium">
+                        <p className="text-gray-200 text-left text-xl font-medium">
                           {item.desc}
                         </p>
                       }
@@ -95,7 +97,7 @@ const Home: NextPage = () => {
               {lang.nft.content.map((item, index) => (
                 <p
                   key={index}
-                  className="text-gray-200 leading-relaxed text-left text-2xl font-medium mt-6 mb-6"
+                  className="text-gray-200 leading-relaxed text-left text-xl font-medium mt-6 mb-6"
                 >
                   {item.desc}
                 </p>
@@ -103,7 +105,7 @@ const Home: NextPage = () => {
             </div>
 
             <div className="flex justify-center items-center pt-4 pb-4">
-              <FlexList imageList={NFTImagesList}></FlexList>
+              <FlexList imageList={NFTImagesList.slice(0, 3)}></FlexList>
             </div>
           </div>
         </Section>
@@ -123,7 +125,7 @@ const Home: NextPage = () => {
               {lang.buy.title}
             </div>
 
-            <ColorButton className="!bg-opacity-50 !bg-white !bg-white text-2xl shadow-lg :hover(!bg-auto border-purple) border-sky-600 border">
+            <ColorButton className="!bg-opacity-50 !bg-white !bg-white text-xl shadow-lg :hover(!bg-auto border-purple)">
               {lang.buy.desc}
             </ColorButton>
           </div>
@@ -149,7 +151,19 @@ const Home: NextPage = () => {
           id={lang.team.anchor}
           title={lang.team.title}
           desc={lang.team.desc}
-        ></Section>
+          imageSrc="/images/dogedream-team.jpg"
+        >
+          <div className="flex flex-col justify-center">
+            {lang.team.content.map((item, index) => (
+              <p
+                key={index}
+                className="indent text-gray-200 leading-relaxed text-left text-xl font-medium mt-6 mb-6"
+              >
+                {item.desc}
+              </p>
+            ))}
+          </div>
+        </Section>
 
         <Section
           id={lang.faqs.anchor}
@@ -189,7 +203,7 @@ const Home: NextPage = () => {
       <BackTop></BackTop>
 
       <Footer></Footer>
-    </div>
+    </>
   )
 }
 

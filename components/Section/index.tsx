@@ -33,9 +33,9 @@ export default function Section({
         <SectionHeader title={title} desc={desc}></SectionHeader>
       )}
 
-      {children}
-
       {imageSrc && <SectionImage imageSrc={imageSrc} {...rest}></SectionImage>}
+
+      {children}
     </section>
   )
 }

@@ -9,7 +9,7 @@ export interface IRoadmapItemProps {
 export const RoadmapItem: React.FC<IRoadmapItemProps> = ({ title, desc }) => (
   <div className={styles.roadmapItem}>
     <div className="text-1xl text-gray-300 mb-2">{title}</div>
-    <p className="text-2xl text-gray-200 leading-normal ">{desc}</p>
+    <p className="text-xl text-gray-200 leading-normal ">{desc}</p>
   </div>
 )
 

@@ -11,13 +11,16 @@ export const NFTImagesList = [
   "/images/nfts/1.jpeg",
   "/images/nfts/2.jpeg",
   "/images/nfts/3.jpeg",
+  "/images/nfts/4.jpeg",
+  "/images/nfts/5.jpeg",
+  "/images/nfts/6.jpeg",
 ]
 
 export const SocialList = () => {
   return (
     <>
       <a
-        href="https://twitter.com/doge_dream_dao"
+        href="https://twitter.com/dogedream2022"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -33,7 +36,7 @@ export const SocialList = () => {
         </svg>
       </a>
       <a
-        href="https://t.me/doge_dream_dao"
+        href="https://t.me/dogedreamnft"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -49,7 +52,7 @@ export const SocialList = () => {
         </svg>
       </a>
       <a
-        href="https://discord.gg/doge_dream_dao"
+        href="https://discord.gg/E3sQXgwVr4"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -140,9 +143,9 @@ export default function Hero(props: IHeroProps) {
         </div>
 
         <div className="flex flex-col md:flex-row items-center  sm:(space-x-1 space-y-1) md:(space-x-2 space-y-2) lg:(space-x-4 space-y-4)">
-          <FlexList imageList={shuffle(NFTImagesList).slice(1)}></FlexList>
-          <FlexList imageList={NFTImagesList}></FlexList>
-          <FlexList imageList={shuffle(NFTImagesList).slice(1)}></FlexList>
+          <FlexList imageList={shuffle(NFTImagesList).slice(0, 2)}></FlexList>
+          <FlexList imageList={shuffle(NFTImagesList).slice(0, 3)}></FlexList>
+          <FlexList imageList={shuffle(NFTImagesList).slice(0, 2)}></FlexList>
         </div>
       </div>
     </Section>
