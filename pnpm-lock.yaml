@@ -13,6 +13,7 @@ specifiers:
   eslint-config-next: 12.1.0
   lodash: ^4.17.21
   next: 12.1.0
+  nprogress: ^0.2.0
   react: 17.0.2
   react-dom: 17.0.2
   react-scroll-into-view: ^1.12.0
@@ -26,6 +27,7 @@ dependencies:
   classnames: 2.3.1
   lodash: 4.17.21
   next: 12.1.0_react-dom@17.0.2+react@17.0.2
+  nprogress: 0.2.0
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-scroll-into-view: 1.12.0_react-dom@17.0.2+react@17.0.2
@@ -1574,6 +1576,10 @@ packages:
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
+    dev: false
+
+  /nprogress/0.2.0:
+    resolution: {integrity: sha1-y480xTIT2JVyP8urkH6UIq28r7E=}
     dev: false
 
   /object-assign/4.1.1:

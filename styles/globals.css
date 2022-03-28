@@ -61,3 +61,11 @@ body {
   /* border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%); */
   /* border-image-slice: 1; */
 }
+
+#nprogress .bar {
+  @apply bg-fuchsia-500;
+}
+
+#nprogress .peg {
+  @apply bg-fuchsia-500;
+}
