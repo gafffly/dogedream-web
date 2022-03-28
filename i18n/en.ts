@@ -1,8 +1,20 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   header: {
-    title: "DogeDream DAO",
+    title: "DogeDream DAO & DogeDream NFT",
     desc: "DogeDream is a decentralized autonomous organization and decentralized social network for DogeCoin lovers and NFT collectors.",
+    keywords: [
+      "dogedream",
+      "狗狗梦",
+      "DAO",
+      "dogecoin",
+      "狗狗币",
+      "NFT",
+      "dogedream DAO",
+      "狗狗梦 DAO",
+      "dogedream NFT",
+      "狗狗梦 NFT",
+    ],
     content: [
       {
         title: "",
@@ -40,6 +52,11 @@ export default {
       title: "FAQ",
       desc: "Common questions of DogeDream DAO",
       anchor: "faq",
+    },
+    {
+      title: "DogeCoin",
+      desc: "DogeCoin official website",
+      anchor: "https://dogecoin.com/",
     },
   ],
 
@@ -175,10 +192,10 @@ export default {
         q: "Why should I join the DogeDreamDao?",
         a: "DogeDreamDao’s goal is to better promote $Doge and let more people know and use it. DAO members will be able to participate in project development and dividends.",
       },
-      {
+      /* {
         q: "Does DogeDreamDao NFT have pre-sale and whitelist?",
         a: "We will reserve 20 NFT for the community and individuals who made significant contributions to the development of $Doge. Another 50 will be public sale on Mirror to reward early supporters.",
-      },
+      }, */
     ],
   },
 
@@ -227,5 +244,6 @@ export default {
     text: "buy NFT",
     title: "Get ready to collect our NFT",
     desc: "Get Started",
+    content: "Coming soon...",
   },
 }

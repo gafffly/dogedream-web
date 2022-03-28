@@ -1,4 +1,5 @@
 import { Dropdown, Menu } from "antd"
+import classNames from "classnames"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import * as React from "react"
@@ -36,9 +37,11 @@ const LanguageMap = {
   },
 }
 
-export interface ILocaleSwitcherProps {}
+export interface ILocaleSwitcherProps {
+  className?: string
+}
 
-export default function LocaleSwitcher(props: ILocaleSwitcherProps) {
+export default function LocaleSwitcher({ className }: ILocaleSwitcherProps) {
   const router = useRouter()
   const { locales, locale } = router
   const activeLocale = locale as Language
@@ -59,7 +62,9 @@ export default function LocaleSwitcher(props: ILocaleSwitcherProps) {
             as={asPath}
             locale={locale}
           >
-            <a className={activeClassName}>{LanguageMap[locale].val}</a>
+            <a className={classNames(className, activeClassName)}>
+              {LanguageMap[locale].val}
+            </a>
           </Link>
         )
       })}

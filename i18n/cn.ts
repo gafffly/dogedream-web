@@ -1,8 +1,20 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   header: {
-    title: "狗狗币之梦",
-    desc: "狗狗梦是一个由狗狗币爱好者和狗狗梦 NFT 收藏者组成的社区和去中心化的自治组织。",
+    title: "狗狗梦 DAO & 狗狗梦 NFT，",
+    desc: "狗狗梦（狗狗币之梦）是一个由狗狗币爱好者和狗狗梦 NFT 收藏者组成的社区和去中心化的自治组织。",
+    keywords: [
+      "dogedream",
+      "狗狗梦",
+      "DAO",
+      "dogecoin",
+      "狗狗币",
+      "NFT",
+      "dogedream DAO",
+      "狗狗梦 DAO",
+      "dogedream NFT",
+      "狗狗梦 NFT",
+    ],
     content: [
       {
         title: "",
@@ -40,6 +52,11 @@ export default {
       title: "FAQ",
       desc: "答疑解惑",
       anchor: "faq",
+    },
+    {
+      title: "DogeCoin",
+      desc: "狗狗币官网",
+      anchor: "https://dogecoin.com/",
     },
   ],
 
@@ -167,10 +184,10 @@ export default {
         q: "为什么要加入 DogeDreamDAO ？",
         a: "DogeDreamDAO 的目的是推广 DogeCoin 让更多人参与并使用它。且 DAO 成员可以参与项目建设和分红。",
       },
-      {
+      /* {
         q: "DogeDreamDao NFT有预售和白名单吗？",
         a: "NFT 会预留 20 个给狗狗币社区和对狗狗币的发展有重大贡献个人。还有 50 个将在 mirror 上众筹发行，以奖励项目早期支持者。",
-      },
+      }, */
     ],
   },
 
@@ -219,5 +236,6 @@ export default {
     text: "购买 NFT",
     title: "这就去抢购限量 NFT",
     desc: "购买",
+    content: "即将到来...",
   },
 }

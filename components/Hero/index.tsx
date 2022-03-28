@@ -1,4 +1,4 @@
-import { shuffle } from "lodash"
+import classNames from "classnames"
 import Image from "next/image"
 import { useRouter } from "next/router"
 import * as React from "react"
@@ -23,6 +23,7 @@ export const SocialList = () => {
         href="https://twitter.com/dogedream2022"
         target="_blank"
         rel="noopener noreferrer"
+        className="active:(text-fuchsia-200 animate-bounce)"
       >
         <svg
           width="24"
@@ -39,6 +40,7 @@ export const SocialList = () => {
         href="https://t.me/dogedreamnft"
         target="_blank"
         rel="noopener noreferrer"
+        className="active:(text-fuchsia-200 animate-bounce)"
       >
         <svg
           width="24"
@@ -52,9 +54,10 @@ export const SocialList = () => {
         </svg>
       </a>
       <a
-        href="https://discord.gg/E3sQXgwVr4"
+        href="https://discord.gg/nWkWQBw5vW"
         target="_blank"
         rel="noopener noreferrer"
+        className="active:(text-fuchsia-200 animate-bounce)"
       >
         <svg
           width="24"
@@ -106,9 +109,20 @@ export const GridList = ({ imageList = [] }: { imageList: string[] }) => {
   )
 }
 
-export const FlexList = ({ imageList = [] }: { imageList: string[] }) => {
+export const FlexList = ({
+  className = "",
+  imageList = [],
+}: {
+  className?: string
+  imageList: string[]
+}) => {
   return (
-    <div className="flex flex-row sm:(space-y-1) md:(flex-col space-y-2) lg:(flex-col space-y-4)">
+    <div
+      className={classNames(
+        className,
+        "flex flex-row gap-4 md:(flex-col gap-8) lg:(flex-col gap-12) xl:(flex-col gap-16)"
+      )}
+    >
       {imageList.map((image) => (
         <CardNft key={image} src={image}></CardNft>
       ))}
@@ -143,9 +157,14 @@ export default function Hero(props: IHeroProps) {
         </div>
 
         <div className="flex flex-col md:flex-row items-center  sm:(space-x-1 space-y-1) md:(space-x-2 space-y-2) lg:(space-x-4 space-y-4)">
-          <FlexList imageList={shuffle(NFTImagesList).slice(0, 2)}></FlexList>
-          <FlexList imageList={shuffle(NFTImagesList).slice(0, 3)}></FlexList>
-          <FlexList imageList={shuffle(NFTImagesList).slice(0, 2)}></FlexList>
+          <Image
+            className="rounded-md"
+            objectFit="cover"
+            alt="nft"
+            width={600}
+            height={744}
+            src={`/images/doge.png`}
+          ></Image>
         </div>
       </div>
     </Section>

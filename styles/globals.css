@@ -5,8 +5,12 @@ body {
   box-sizing: border-box;
 }
 
+@import "antd/es/grid/style/index.css";
 @import "antd/es/collapse/style/index.css";
 @import "antd/es/timeline/style/index.css";
+@import "antd/es/message/style/index.css";
+@import "antd/es/button/style/index.css";
+@import "antd/es/drawer/style/index.css";
 @import "antd/es/list/style/index.css";
 @import "antd/es/spin/style/index.css";
 @import "antd/es/menu/style/index.css";
