@@ -138,7 +138,7 @@ export default function Hero(props: IHeroProps) {
   const lang = i18n[activeLocale as Language]
 
   return (
-    <Section>
+    <Section className="!pt-6">
       <div className="flex flex-col md:flex-row md:(items-center justify-between)">
         <div className="flex-shrink">
           <h1 className="text-slate-100 text-8xl text-semibold">

@@ -25,7 +25,7 @@ export default function Section({
     <section
       id={id}
       className={classNames(
-        "container mx-auto pl-8 pr-8 pt-8 pb-8 md:(pt-12 pb-12) lg:(pt-16 pb-16) xl:(pt-24 pb-24)",
+        "container mx-auto pl-8 pr-8 pt-8 pb-8 md:(pt-12 pb-12) xl:(pt-16 pt-16)",
         className
       )}
     >

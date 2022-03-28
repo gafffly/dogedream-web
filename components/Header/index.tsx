@@ -105,7 +105,7 @@ const ResponsiveHeader = () => {
 
 export default function Header(props: IHeaderProps) {
   return (
-    <header className="container mx-auto h-min pl-8 pr-8">
+    <header className="container mx-auto h-min pl-8 pr-8 mt-6">
       <div className="flex flex-row items-center justify-between h-70px">
         <TextLogo></TextLogo>
 
