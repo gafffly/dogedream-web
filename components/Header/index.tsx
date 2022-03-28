@@ -41,7 +41,13 @@ export const NavMenu = ({ onClick = () => {} }: { onClick?: () => void }) => {
             }
             title={item.desc}
           >
-            {item.title}
+            {isAbsoluteURL ? (
+              <a target={`_blank`} href={item.anchor}>
+                {item.title}
+              </a>
+            ) : (
+              item.title
+            )}
           </div>
         )
 
