@@ -67,7 +67,7 @@ const Home: NextPage = () => {
               className="bg-auto min-h-sm"
             ></SectionImage>
 
-            <div className="flex flex-row items-center pl-12 pr-12">
+            <div className="flex flex-row items-center">
               <List
                 itemLayout="vertical"
                 dataSource={lang.vision.content}
@@ -106,7 +106,7 @@ const Home: NextPage = () => {
               ))}
             </div>
 
-            <div className="flex justify-center gap-6 items-center pt-4 pb-4 overflow-x-auto">
+            <div className="flex justify-center gap-6 items-center pt-4 pb-4 overflow-x-hidden">
               {!isMobileDevice && (
                 <FlexList
                   className="hidden-xl hidden-md"
