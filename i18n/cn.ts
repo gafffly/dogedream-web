@@ -29,11 +29,6 @@ export default {
 
   nav: [
     {
-      title: "DAO",
-      desc: "狗狗梦去中心化自治组织",
-      anchor: "dao",
-    },
-    {
       title: "NFT",
       desc: "狗狗梦 NFT",
       anchor: "nft",
@@ -52,6 +47,12 @@ export default {
       title: "FAQ",
       desc: "答疑解惑",
       anchor: "faq",
+    },
+    {
+      title: "白皮书",
+      desc: "狗狗梦去中心化自治组织白皮书",
+      anchor:
+        "https://drive.google.com/file/d/1N9qwAI5SYBvClGbYVSQQSkvicBh4i8LF/view?usp=sharing",
     },
     {
       title: "DogeCoin",
