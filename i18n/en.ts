@@ -29,11 +29,6 @@ export default {
 
   nav: [
     {
-      title: "DAO",
-      desc: "DogeDream DAO",
-      anchor: "dao",
-    },
-    {
       title: "NFT",
       desc: "DogeDream DAO NFT",
       anchor: "nft",
@@ -52,6 +47,12 @@ export default {
       title: "FAQ",
       desc: "Common questions of DogeDream DAO",
       anchor: "faq",
+    },
+    {
+      title: "Whitepaper",
+      desc: "Show the everything of DogeDream DAO",
+      anchor:
+        "https://drive.google.com/file/d/1N9qwAI5SYBvClGbYVSQQSkvicBh4i8LF/view?usp=sharing",
     },
     {
       title: "DogeCoin",
