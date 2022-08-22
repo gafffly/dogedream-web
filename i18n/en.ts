@@ -170,10 +170,6 @@ export default {
         a: "There will be 500 DogeDream available to mint.",
       },
       {
-        q: "What is the minting price for each NFT?",
-        a: "Each DogeDream will be available for 0.2 ETH.",
-      },
-      {
         q: "Is there a limit on the number of  NFTs minted for each wallet address?",
         a: "Only one NFT could be minted for one wallet address.",
       },

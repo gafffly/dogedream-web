@@ -37,7 +37,7 @@ export const SocialList = () => {
         </svg>
       </a>
       <a
-        href="https://t.me/dogedreamnft"
+        href="https://t.me/dogedreamdao_Official"
         target="_blank"
         rel="noopener noreferrer"
         className="active:(text-fuchsia-200 animate-bounce)"
@@ -130,7 +130,7 @@ export const FlexList = ({
   )
 }
 
-export interface IHeroProps {}
+export interface IHeroProps { }
 
 export default function Hero(props: IHeroProps) {
   const router = useRouter()
